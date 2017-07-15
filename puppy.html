@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:bold,bolditalic" rel="stylesheet">
+
+</head>
+<style>
+
+input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #FF9700;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 250%;
+}
+/*create the navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+	padding-top: 39px;
+    float: right;
+    font-family: 'Montserrat Alternates', sans-serif;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-color: #FF9700;
+    color: orange;
+    font-weight: 300;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+li a:hover {
+	background-color: gray;
+}
+ /*create the image background to put button over*/
+.img-wrapper {
+  position: relative;
+  width:100%;
+
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+}
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+  overflow:hidden;
+}
+.img-responsive {
+ width: 100%;
+ max-height:75%;
+ overflow:hidden;
+}
+
+h2 {
+	position: absolute;
+	left: 50px;
+	top: 100px;
+	width:100%;
+	color: #ffffff;
+	font-size: 40px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h3 {
+	position: absolute;
+	left: 40px;
+	top:350px;
+	width:750px;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	word-break: break-all;
+
+}
+h4 {
+	position: absolute;
+	left: 40px;
+	top:460px;
+	width:773px;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	word-break: break-all;
+
+}
+.w3button{
+	width:100%;
+}
+.w3-black{
+	width:75%;
+}
+.w3-round-xxlarge{
+	width:20%;
+	height:8%;
+	position: absolute;
+	left: 120px;
+	top:225px;
+	font-size: 24px;
+}
+
+form { 
+position: fixed;
+display:inline;
+margin: 0 auto; 
+width:400px;
+padding-left: 250px;
+padding-top:30px;
+
+}
+
+#logo {
+	height: 100px;
+}
+</style>
+
+<ul>
+  <img id = "logo" src = "ruffday_banner_light.png">
+  <form>
+  <input type="text" name="search" placeholder="Search..">
+  </form>
+  <li><a href="about.html">About</a></li>
+  <li><a href = "meetPups.html">Meet Our Pups</a></li>
+</ul>
+<div class="img-wrapper">
+  <img scale = "50%"; class="img-responsive" src="couple-dog-park.jpg">
+  <h2> Paw-sitively here for you!</h2>
+  <div class="img-overlay">
+   <button class="w3-button w3-orange w3-round-xxlarge" onclick = "location.href = 'book.html'">Book Now!</button>
+  </div>
+  <h3> "I got into an argument at work and 
+  	I thought it would be a great idea to play with some dogs. Dave the Pug helped me forget about my problems as he waddled around. Thanks Ruffday!"-Dave</h3>
+  <h4> "Midterms were in full swing and I was feeling suuuupeerr overwhelmed. I needed some fluff in my life so I thought that Nala the Samoyed would be a great pick-me-up. She definitely was and I'll be sure to keep on using this service." - Belinda
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:bold,bolditalic" rel="stylesheet">
+
+</head>
+<style>
+input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #FF9700;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 250%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+	padding-top: 39px;
+    float: right;
+    font-family: 'Montserrat Alternates', sans-serif;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-color: #FF9700;
+    color: orange;
+    font-weight: 300;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+li a:hover {
+	background-color: gray;
+}
+form { 
+position: fixed;
+display:inline;
+margin: 0 auto; 
+width:400px;
+padding-left: 300px;
+padding-top:30px;
+
+}
+
+#logo {
+	height: 100px;
+}
+</style>
+<div>
+<ul>
+  <img id = "logo" src = "ruffday_banner_light.png">
+  <form>
+  <input type="text" name="search" placeholder="Search..">
+  </form>
+  <li><a href="about.html">About</a></li>
+  <li><a href ="puppy.html">Home</a></li>
+</ul>
+</div>
+<img src = "ruffday_confirmationpage2.png">
+
+</html>

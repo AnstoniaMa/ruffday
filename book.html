@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:bold,bolditalic" rel="stylesheet">
+
+</head>
+<style>
+input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #FF9700;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 250%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+  padding-top: 39px;
+    float: right;
+    font-family: 'Montserrat Alternates', sans-serif;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-color: #FF9700;
+    color: orange;
+    font-weight: 300;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+li a:hover {
+  background-color: gray;
+}
+form { 
+position: fixed;
+display:inline;
+margin: 0 auto; 
+width:400px;
+padding-left: 250px;
+padding-top:30px;
+
+}
+
+#logo {
+  height: 100px;
+}
+
+</style>
+<div>
+<ul>
+  <img id = "logo" src = "ruffday_banner_light.png">
+  <form>
+  <input type="text" name="search" placeholder="Search..">
+  </form>
+  <li><a href="about.html">About</a></li>
+  <li><a href = "puppy.html">Home</a></li>
+</ul>
+</div>
+<div style="float:center;">
+        <style>
+        p.center {
+            text-align: left;
+            color: #FF9700;
+            margin-left: 3em;
+        }
+    </style>
+
+<style>
+table {
+    .box {                width: 100%; 
+        display:table-cell;           }
+        width: 49.2%;           td {
+        height: 280px;                text-align: center;
+    }               width: 33%;
+}           }
+@media screen and (min-width: 753px) {
+    .box {
+        display:table-cell;
+        width: 49.2%;
+        height: 280px;
+    }
+}
+@media screen and (max-width: 752px) {
+    .box {
+        width: 100%;
+    }
+}
+      button.accordion {
+          background-color: #f4f4f4;
+          color: #FF9700;
+          cursor: pointer;
+          padding: 18px;
+          width: 85%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+      }
+      button.accordion.active {background-color: #d9d9d9;}
+      button.accordion:hover {
+          background-color: #FF9700;
+       color: #fff;
+      }
+      
+      div.panel {
+          padding: 0 10px;
+          display: none;
+          background-color: white;
+  width: 95%;
+      text-align: left;
+      }
+      
+      div.panel.show {
+          display: block !important;
+      }
+        button.accordion:after {
+          content: '\02795'; /* Unicode character for "plus" sign (+) */
+          font-size: 13px;
+          color: #f4f4f4;
+          float: right;
+          margin-left: 5px;
+      }
+      
+      button.accordion.active:after {
+          content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+     .page-title {
+           padding-left: 5%;
+           padding-right: 5%;
+     }
+     .std {
+           padding-left: 5%;
+           padding-right: 5%;
+     }
+    .std table td {
+           padding: 0px;
+           border: 0px #fff;
+     }
+    .breadcrumbs {
+           display: none;
+    }
+    .footer-before-container .block.block-subscribe {
+           width: 60%;
+           margin-left: 5%;
+     }
+     .footer-before-container .guide-measure {
+           width: 29%;
+     }
+.dropbtn {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left:0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 400px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+form{
+  display:"none";
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+</style>
+    <br/>
+    <h1><strong>Click below to expand:</strong></h1>
+<!-- 
+<div class="dropdown" style="float:left;">
+<button class="dropbtn">Hover over me to choose a pup!</button>
+    <div class="dropdown-content">
+      <button class = "w3-button w3-ripple" onclick = store()>Doug the Pug</button>
+      <button class = "w3-button w3-ripple" onclick = store()>Nala the Samoyed</button>
+      <button class = "w3-button w3-ripple"onclick = store()>King the Chihuahua</button>
+    </div>
+</div>
+</div> -->
+<button class="accordion">Select Your Service</button>
+<div class="panel">
+    <button class = "w3-button w3-orange w3-ripple" onclick = price("One")>One Time Package ($15)</button>
+    <button class = "w3-button w3-grey w3-ripple" onclick = price("Three")>Three Time Package ($35) </button>
+    <button class = "w3-button w3-orange w3-ripple"onclick = price("Six")>Six Time Package ($50) </button>
+  <p id = "price"></p>
+</div>
+<button class="accordion">Choose Your Pup!</button>
+<div class="panel">
+    <button class = "w3-button w3-orange w3-ripple" onclick = store("Doug")>Doug the Pug</button>
+    <button class = "w3-button w3-grey w3-ripple" onclick = store("Nala")>Nala the Pomeranian</button>
+    <button class = "w3-button w3-orange w3-ripple"onclick = store("King")>King the Golden Retriever</button>
+  <p id = "store"></p>
+</div>
+
+<button class="accordion">Schedule An Appointment</button>
+<div class="panel">
+<div style = "position: relative; left: 75px; top: -50px">
+<form id = "form1" style = "display:none">
+  Date:
+  <input type="date" id = "playDate">
+  <button onclick = date()>Submit</button>
+</form>
+</div>
+  <p id = "date_print">Please enter a date</p>
+  <button onclick = show()>Choose a Date</button>
+
+</div>
+
+<button class="accordion">Enter Billing Information</button>
+<div class="panel">
+<form style = "position: relative; width: 500px; height:250px">
+<br>
+Name: <br>
+<input type = "text" name = "name"><br>
+Email: <br>
+<input type = "text" name = "email"><br>
+Phone Number: <br>
+<input type = "text" name = "number"><br>
+Street Address: <br>
+<input type = "text" name = "address"><br>
+City:
+<input type = "text" name = "city">
+State: 
+<input type = "text" name = "state">
+Zipcode:
+<input type = "text" name = "zip"><br> 
+Name on Card:
+<input type = "text" name = "noc"><br>
+Card Number:
+<input type = "text" name = "cn"><br>
+Date of Expiration:
+<input type = "text" name = "doe"><br>
+CVV:
+<input type = "text" name = "cvv"><br>
+
+</form>
+</div>
+
+<button class="accordion">Specify Location</button>
+<div class="panel">
+  <form style = "position: relative; width: 500px; height:400px">
+  <br>
+  Street Address: 
+  <input type = "text" name = "address"><br>
+  City:
+  <input type = "text" name = "city">
+  State: 
+  <input type = "text" name = "state">
+  Zipcode:
+  <input type = "text" name = "zip"><br> 
+  <a href="completion.html" class="w3-button w3-orange" onclick = submit()>Complete Puppy Date</a>
+</div>
+<script type="text/javascript">
+    var acc = document.getElementsByClassName("accordion"),
+        i;
+    for (i = 0; i < acc.length; i++) acc[i].onclick = function(e) {
+        e.preventDefault(), this.classList.toggle("active-faq"), this.nextElementSibling.classList.toggle("show")
+    };
+    var loc = location.hash;
+    if (loc.includes("faq")) {
+        acc[1].classList.toggle("active-faq");
+        acc[1].nextElementSibling.classList.toggle("show");
+    }
+    function price(price){
+      document.getElementById("price").innerHTML = "Thank you for choosing our " + price + " Time Package. Please continue to choosing your favorite puppy!"; 
+    }
+    function store(name){
+      document.getElementById("store").innerHTML = "Thanks for choosing " + name + ". Please continue to scheduling your next appointment!";
+    }
+    function date(){
+      var x = document.getElementById("playDate").value();
+      document.getElementById("date_print").innerHTML = x;
+    }
+    function show(){
+      document.getElementById("form1").style.display="block"
+    }
+    function submit(){
+      document.getElementById("billing").innerHTML = "Thank you for submitting your information!";
+    }
+    function complete(){
+      document.getElementById("complete").onclick = function() {
+        location.href = "completion.html";
+      }
+    }
+</script>
+
+
+</html>
